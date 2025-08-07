@@ -8,7 +8,8 @@ import Event from './Event.jsx'
 import Sumdemo from './sum.jsx'
 import Hooks from './Hooks.jsx'
 import Calculator from './cal.jsx'
-import Validation from './validation.jsx'
+import Validation from './Validation.jsx'
+import Task from './Task.jsx'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Link to="/event">Event      </Link>
         <Link to="/calculator">Calculator     </Link>
         <Link to="/validation">Validation     </Link>
+        <Link to="/Task">Task     </Link>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -35,6 +37,7 @@ function App() {
           <Route path="/Event" element={<Event />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/validation" element={<Validation />} />
+          <Route path="/Task" element={<Task />} />
         </Routes>
       </div>
     </Router>
