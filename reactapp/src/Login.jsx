@@ -1,8 +1,18 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 function Login() {
     const[email, setEmail] = useState("");
     const[password, setPassword] = useState("");
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    var navigate=useNavigate();
+    
+    React.useEffect(()=>{
+        
+        var a= localStorage.getItem("isLoggedIn");
+        if(a=="true"){
+            navigate("/Dashboard");
+        }
+    })
 
     const handleLogin = () => {
         const storedEmail = localStorage.getItem("email");
@@ -10,9 +20,11 @@ function Login() {
 
         if (email === storedEmail && password === storedPassword) {
             alert("Login Successful");
+            setIsLoggedIn(true);
         } else {
             alert("Invalid email or password");
         }
+        localStorage.setItem("isLoggedIn", isLoggedIn);
     }
 
     return (
