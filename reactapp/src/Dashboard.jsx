@@ -2,7 +2,12 @@ import React, { useState } from "react";
 
 function Dashboard() {
     const logout = () => {
-        localStorage.removeItem("isLoggedIn");
+        localStorage.setItem("isLoggedIn", false);
+        localStorage.removeItem("name");
+        localStorage.removeItem("email");
+        localStorage.removeItem("MobileNo");
+        localStorage.removeItem("password");
+        
         alert("Logged out successfully");
         window.location.href = "/Login"; 
     }
