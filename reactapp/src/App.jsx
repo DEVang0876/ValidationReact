@@ -12,6 +12,7 @@ import Validation from './Validation.jsx'
 import Signup from './Signup.jsx'
 import Login from './Login.jsx'
 import Dashboad from './Dashboard.jsx'
+import Changepassword from './Changepassword.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,6 +32,7 @@ function App() {
         <Link to="/Signup">Signup     </Link>
         <Link to="/Login">Login     </Link>
         <Link to="/Dashboard">Dashboard     </Link>
+        <Link to="/Changepassword">Change Password     </Link>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -43,6 +45,7 @@ function App() {
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Dashboard" element={<Dashboad />} />
+          <Route path="/Changepassword" element={<Changepassword />} />
         </Routes>
       </div>
     </Router>

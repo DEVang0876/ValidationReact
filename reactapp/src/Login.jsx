@@ -25,6 +25,7 @@ function Login() {
             alert("Invalid email or password");
         }
         localStorage.setItem("isLoggedIn", isLoggedIn);
+        navigate("/Dashboard");
     }
 
     return (
