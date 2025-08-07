@@ -9,7 +9,8 @@ import Sumdemo from './sum.jsx'
 import Hooks from './Hooks.jsx'
 import Calculator from './cal.jsx'
 import Validation from './Validation.jsx'
-import Task from './Task.jsx'
+import Signup from './Signup.jsx'
+import Login from './Login.jsx'
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
         <Link to="/event">Event      </Link>
         <Link to="/calculator">Calculator     </Link>
         <Link to="/validation">Validation     </Link>
-        <Link to="/Task">Task     </Link>
+        <Link to="/Signup">Signup     </Link>
+        <Link to="/Login">Login     </Link>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -37,7 +39,8 @@ function App() {
           <Route path="/Event" element={<Event />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/validation" element={<Validation />} />
-          <Route path="/Task" element={<Task />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
       </div>
     </Router>
