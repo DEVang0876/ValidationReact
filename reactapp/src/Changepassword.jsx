@@ -27,7 +27,7 @@ function Changepassword() {
     }
     return (
         <>
-            <h1>Change Password</h1>
+            <h1>ChangePassword</h1>
             <label>Current Password: </label>
             <input type="password" value={currentPassword} onChange={(e) => setCurrentPassword(e.target.value)} />
             <br />
