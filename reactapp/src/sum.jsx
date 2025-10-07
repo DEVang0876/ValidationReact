@@ -5,7 +5,6 @@ class Sumdemo extends React.Component{
         this.state = {}
     }
    
-
 doSum(){
     var no1 = parseInt(this.state.txt1);
     var no2 = parseInt(this.state.txt2);

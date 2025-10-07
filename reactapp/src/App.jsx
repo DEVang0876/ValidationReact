@@ -14,8 +14,8 @@ import Login from './Login.jsx'
 import Dashboad from './Dashboard.jsx'
 import Changepassword from './Changepassword.jsx'
 import Todo from './Todo.jsx'
-import Product from './product.jsx'
 import ProductCard from './product.jsx';
+import ProductsList from './ProductsList.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,15 +32,7 @@ function App() {
   <Link to="/validation">Validation     </Link>
   <Link to="/event">Event      </Link>
   <Link to="/calculator">Calculator     </Link>
-  <link to="/ProductCard"> Products</link>
-        {/* <Link to="/contact">Contact     </Link> */}
-        {/* <Link to="/about">About   </Link> */}
-        {/* <Link to="/about">About   </Link>
-        <Link to="/contact">Contact     </Link>
-        <Link to="/hooks">Hooks     </Link>
-        */}
-        
-        
+  <Link to="/ProductCard"> Products</Link>
         
         <Link to="/Signup">Signup     </Link>
         <Link to="/Login">Login     </Link>
@@ -56,14 +48,8 @@ function App() {
                     <Route path="/validation" element={<Validation />} />
                     <Route path="/Event" element={<Event />} />
                     <Route path="/calculator" element={<Calculator />} />
-                    <Route path='/ProductCard' element={<ProductCard />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> 
-
-          */}
-          
-          
-          
+                    <Route path='/ProductCard' element={<ProductsList />} />
+      
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Dashboard" element={<Dashboad />} />

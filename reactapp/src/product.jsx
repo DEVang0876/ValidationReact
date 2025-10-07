@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-/**
- * Product Card - Beginner friendly
- * Fetches product data from https://fakestoreapi.com/products/{id}
- * Props:
- *  - productId (number) default 1
- */
 function ProductCard({ productId = 1 }) {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);

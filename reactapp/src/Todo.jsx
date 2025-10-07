@@ -23,7 +23,7 @@ class Todo extends React.Component {
       try {
         localStorage.setItem("todos_v1", JSON.stringify(this.state.todos));
       } catch (e) {
-        // ignore
+        
       }
     }
   }
